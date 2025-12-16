@@ -29,7 +29,11 @@ repositories {
   }
   maven {
     name 'TheOneProbe'
-    url "https://maven.tterrag.com/"
+    url "https://modmaven.dev/"
+  }
+  maven {
+    name 'Local'
+    url "file:/workspaces/Atum2/"
   }
 }
 
@@ -55,10 +59,10 @@ minecraft {
 dependencies {
     deobfProvided "mezz.jei:jei_${minecraft_version}:${jei_version}:api"
     runtime "mezz.jei:jei_${minecraft_version}:${jei_version}"
-    deobfProvided "mcp.mobius.waila:Hwyla:${hwyla_version}_${minecraft_version}"
+    deobfProvided "mcp.mobius.waila:Hwyla:${hwyla_version}_${minecraft_version}:api"
     deobfProvided "CraftTweaker2:CraftTweaker2-MC1120-Main:${ct_version}"
 	deobfProvided "com.azanor.baubles:Baubles:${baubles_version}:api"
-	deobfProvided "mcjty.theoneprobe:TheOneProbe-1.12:${top_version}:api"
+	deobfProvided "mcjty.theoneprobe:TheOneProbe-1.12:${top_version}"
 }
 
 processResources {

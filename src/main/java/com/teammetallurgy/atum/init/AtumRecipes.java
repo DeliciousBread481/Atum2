@@ -166,6 +166,7 @@ public class AtumRecipes {
     @SubscribeEvent
     public static void registerKilnRecipes(RegistryEvent.Register<IKilnRecipe> event) {
         AtumRegistry.registerRecipe("marl", new KilnRecipe(AtumBlocks.MARL, new ItemStack(BlockCeramic.getCeramicBlocks(EnumDyeColor.WHITE)), 0.1F), event);
+        addKilnRecipes();
     }
 
     public static void addKilnRecipes() {

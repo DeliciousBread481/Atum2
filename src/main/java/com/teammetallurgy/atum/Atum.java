@@ -57,7 +57,6 @@ public class Atum {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         proxy.init();
-        AtumRecipes.addKilnRecipes();
         NetworkRegistry.INSTANCE.registerGuiHandler(Atum.instance, new AtumGuiHandler());
         IntegrationHandler.INSTANCE.init();
     }
